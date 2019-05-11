@@ -9,8 +9,8 @@ app.secret_key = "super secret key"
 app.permanent_session_lifetime = datetime.timedelta(days=31)
 app.config['OAUTH_CREDENTIALS'] = {
 	'vk': {
-		'id': '6977432',
-		'secret': 'zu17mP1AGu6b83RIZSXX'
+		'id': 'app_id',
+		'secret': 'secret_key'
 	}
 }
 
