@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title> o.O(auth) </title>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+				}
+
+			*:focus {
+				outline: none;
+				}
+			body {
+				font-family: Arial;
+				background-color: #3498DB;
+				padding: 250px;
+				}
+			.auth_form {
+				margin: 20px auto;
+				width: 300px;
+				}
+			.login-screen {
+				background-color: #FFF;
+				padding: 20px;
+				border-radius: 5px
+				}
+
+			.app-title {
+				text-align: center;
+				color: #777;
+				}
+
+			.control-group {
+				margin-bottom: 10px;
+				}
+
+			.vk_btn {
+				border: 2px solid transparent;
+				background: #3498DB;
+				color: #ffffff;
+				font-size: 16px;
+				line-height: 25px;
+				padding: 10px 0;
+				text-decoration: none;
+				text-shadow: none;
+				border-radius: 3px;
+				box-shadow: none;
+				transition: 0.25s;
+				display: block;
+				width: 250px;
+				margin: 0 auto;
+				}
+
+			.vk_btn:hover {
+				background-color: #2980B9;
+				}
+
+	      
+	    </style>
+	</head>
+	<body>
+		<form class='auth_form'  action="{{ url_for('auth') }}" method="post">
+			<div class='login-screen'>
+			<button class="vk_btn">Авторизоваться</button>
+			</div>
+	</body>
+</html>
