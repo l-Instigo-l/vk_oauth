@@ -27,7 +27,7 @@ def index():
 
 @app.route('/auth', methods=["POST"])
 def auth():
-	url = 'https://oauth.vk.com/authorize?client_id=' + app.config['OAUTH_CREDENTIALS']['vk']['id'] + '&display=page&redirect_uri=http://localhost:5000/result&scope=friends&response_type=code&v=5.95'
+	url = 'https://oauth.vk.com/authorize?client_id=' + app.config['OAUTH_CREDENTIALS']['vk']['id'] + '&display=page&redirect_uri=http://localhost:5000/result&scope=friends,offline&response_type=code&v=5.95'
 	return redirect(url)
 
 @app.route('/result', methods=["GET", "POST"])
